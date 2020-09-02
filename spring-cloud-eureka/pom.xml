@@ -2,10 +2,11 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
+    
     <groupId>com.yqsong</groupId>
-    <artifactId>service-demo</artifactId>
+    <artifactId>spring-cloud-eureka</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>service-demo</name>
+    <name>spring-cloud-eureka</name>
     <description>Demo project for Spring Boot</description>
 
     <parent>
@@ -14,24 +15,16 @@
         <version>1.0-SNAPSHOT</version>
     </parent>
     
-    <properties>
-        <java.version>1.8</java.version>
-        
-    </properties>
-
     <dependencies>
-        
-        <!--添加spring-boot web依赖-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
-        <!--添加eureka的client客户端-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-client</artifactId>
+            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
         </dependency>
-        
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
@@ -44,9 +37,7 @@
             </exclusions>
         </dependency>
     </dependencies>
-    
-    
-    
+
     <build>
         <plugins>
             <plugin>
